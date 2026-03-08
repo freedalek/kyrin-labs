@@ -39,6 +39,7 @@ hugo_stats.json
 
 # Obsidian Conf
 .obsidian/
+Excalidraw/
 
 # OS files
 .DS_Store
