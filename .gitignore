@@ -1,23 +1,48 @@
-# Obsidian配置与缓存（不上传）
-.obsidian/
-.obsidian/cache/
-.obsidian/workspace.json
-.obsidian/graph.json
-copliot/
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
-# 附件与大型文件
-attachments/
-*.pdf
-*.mp4
-*.zip
-*.log
+# Test binary, built with `go test -c`
+*.test
 
-# AI模型缓存与临时文件
-embeddings/
-*.faiss
-*.pkl
-/tmp/
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
 
-# 操作系统文件
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
+# Editor/IDE
+# .idea/
+# .vscode/
+
+# Hugo generated files
+/public/
+/resources/_gen/
+.hugo_build.lock
+hugo_stats.json
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Editor temp files (optional)
+*.swp
+*~
+.idea/
+.vscode/

@@ -1,0 +1,286 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "033576a6b33dff69",
+    "type": "split",
+    "children": [
+      {
+        "id": "84e30e37024d9f2a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "318abbbcd7749f6f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "cc8540b919f4ee67",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#family/dad",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9b78bc0e4508fc3f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e2f9ecf537a853a4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 242.5
+  },
+  "right": {
+    "id": "e909704c2c67d329",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ef9e2e37a2f2506",
+        "type": "tabs",
+        "dimension": 53.983516483516475,
+        "children": [
+          {
+            "id": "6d086e2d3fce45ca",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "bfe60a9c435028cc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "fdf26b19b598132b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "14a387d228e8b0a8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "59e6888cf8d385df",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "2b1cb0e994029a0d",
+        "type": "tabs",
+        "dimension": 46.016483516483525,
+        "children": [
+          {
+            "id": "9200f3fe9194d1d8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 382.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "random-note:开始漫游笔记": false,
+      "workspaces:管理工作区布局": false,
+      "bases:新建数据库": false,
+      "templater-obsidian:Templater": false,
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "About.md",
+    "0x03_Tools/AI/DLP/方案设计.md",
+    "0x03_Tools/AI/DLP/AI Key_words Tool.md",
+    "0x03_Tools/AI/AI安全产业调研/调研思路.md",
+    "0x02_Blogs/Web3_知识点总结（一）.md",
+    "0x02_Blogs/Ollama_DS.md",
+    "0x02_Blogs/BlackArch安装.md",
+    "0x01_Writeups/0x00_Ethernaut/01_Fallback/1 Fallback.md",
+    "0x01_Writeups/0x00_Ethernaut/05_Token/05_Token.md",
+    "0x01_Writeups/0x00_Ethernaut/04_Telephone/04_Telephone.md",
+    "0x01_Writeups/0x00_Ethernaut/03_Coin Flip/03_Coin Flip.md",
+    "0x01_Writeups/0x00_Ethernaut/02_FAL1OUT/2 Fal1out.md",
+    "README.md",
+    "未命名.md",
+    "0x01_Writeups/0x00_Ethernaut/05_Token",
+    "0x01_Writeups/0x00_Ethernaut/04_Telephone",
+    "0x01_Writeups/0x00_Ethernaut/03_Coin Flip",
+    "LICENSE",
+    "思路笔记.md",
+    "TASK.md",
+    "Homepage.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "3. Resources/knowledge-management/Sciences/Mathematics/mcs.pdf",
+    "3. Resources/knowledge-management/Sciences/Mathematics/dmoi4.pdf",
+    "3. Resources/knowledge-management/Artificial Intelligence/Productions/DeepSeek/DeepSeek_R1.pdf",
+    "4. Archives/Pictures_edit/PS视频/【92爱知趣网校】PSD Ai EPS文件缩略图插件极速显示永久安装/PSD Ai EPS文件缩略图插件极速显示永久安装/注册码.txt",
+    "4. Archives/Pictures_edit/PS视频/【92爱知趣网校】PSD Ai EPS文件缩略图插件极速显示永久安装/设计师都在关注的公众号.png",
+    "未命名.canvas",
+    "HOME.canvas",
+    "Untitled.canvas",
+    "1. Projects/Hunter_Plan/Sec_Chain/Chain_Notes/Writeup_ethernaut/0 Hello ethernaut/Pasted image 20251108114327.png",
+    "1. Projects/Hunter_Plan/Sec_Chain/Chain_Notes/Writeup_ethernaut/0 Hello ethernaut/Pasted image 20251108112124.png",
+    "1. Projects/Hunter_Plan/Sec_Chain/Chain_Notes/Writeup_ethernaut/0 Hello ethernaut/Pasted image 20251108105610.png",
+    "1. Projects/Hunter_Plan/Sec_Chain/Chain_Notes/Writeup_ethernaut/0 Hello ethernaut/Pasted image 20251108102641.png",
+    "1. Projects/Hunter_Plan/Sec_Chain/Chain_Notes/Writeup_ethernaut/0 Hello ethernaut/Pasted image 20251108102304.png",
+    "1. Projects/personal-brand-wot-sharing-meeting/architecture diagram/Monorepo.svg",
+    "4. Archives/Travel Logs/未命名.canvas",
+    "3. Resources/knowledge-management/Information Security/Offensive Security/0x0A_Penetration Testng/OSCP2024-1.0/sl.png",
+    "3. Resources/knowledge-management/Languages/English/IELTS/学长的雅思资料/四科的讲义/阅读讲义/阅读营注意事项.jpg",
+    "3. Resources/knowledge-management/Languages/English/IELTS/学长的雅思资料/四科的讲义/阅读讲义/助教老师【亮亮学长】微信.jpg",
+    "主页.canvas",
+    "Templates/HOME.canvas",
+    "hello/HOME.canvas",
+    "hello/Templates/HOME.canvas"
+  ]
+}

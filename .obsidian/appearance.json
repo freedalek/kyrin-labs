@@ -1,0 +1,17 @@
+{
+  "accentColor": "",
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "HideMarkdownEmbedTitle",
+    "MultiColumn",
+    "ImageWidth",
+    "Checkboxes",
+    "DoneTaskInEditingMode",
+    "Homepage"
+  ],
+  "baseFontSize": 16,
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "translucency": false
+}
