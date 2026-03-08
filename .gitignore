@@ -37,6 +37,9 @@ go.work.sum
 .hugo_build.lock
 hugo_stats.json
 
+# Obsidian Conf
+.obsidian/
+
 # OS files
 .DS_Store
 Thumbs.db

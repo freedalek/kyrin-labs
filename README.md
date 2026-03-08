@@ -1,19 +1,50 @@
-# Web3 Security Research by [freedalek]
+# Kyrin Labs
 
-## 🔒 Services Offered
-- **Smart Contract Audit**: Comprehensive security review for DeFi protocols
-- **DeFi Protocol Security Assessment**: Custom threat modeling
-- **Incident Response**: Post-hack analysis and remediation guidance
+Security research, threat hunting and incident investigation.
 
-## 📝 Recent Audits & Writeups
+Author: freedalek
 
-## 🛠️ Open Source Tools
+---
 
-## 📚 Learning Notes
+## About
 
-## 📧 Contact
-- GitHub Issues: [Report Bug/Suggest Feature](https://github.com/freedalek/security-research/issues)
-- Email: A_free_dAlek@outlook.com
-- Twitter: 
+This repository contains my research on:
 
-> 🔍 **Hiring?** Check out my [full audit reports](audits/) and [methodology](methodology/) to see my approach.
+- Threat Hunting
+- DFIR
+- Attack Path Analysis
+- Security Investigation
+
+---
+
+## Research Areas
+
+### Threat Hunting
+
+Detection techniques and threat hunting workflows.
+
+### DFIR
+
+Digital Forensics and Incident Response.
+
+### Attack Analysis
+
+Investigation of attack paths and attacker behavior.
+
+---
+
+## Research
+
+| Topic | Description |
+|------|-------------|
+| Threat Hunting | Detection engineering |
+| DFIR | Incident investigation |
+| Attack Analysis | Attack path analysis |
+
+---
+
+## Case Studies
+
+Security investigation case studies.
+
+Example template:
