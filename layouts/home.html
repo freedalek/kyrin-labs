@@ -1,0 +1,138 @@
+{{- define "content" -}}
+<main>
+  {{- /* Hero Section */ -}}
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>{{ .Site.Title }}</h1>
+        <p class="subtitle">{{ .Site.Params.description }}</p>
+
+        <div class="features">
+          <span class="feature-tag">Data Leak Investigation</span>
+          <span class="feature-tag">Internal Threat Analysis</span>
+          <span class="feature-tag">Security Research</span>
+        </div>
+
+        <a href="/0x00_cases/" class="btn-cta">View Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+  {{- /* Services Section */ -}}
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Core Services</h2>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">🛡️</div>
+          <h3>DLP Investigation</h3>
+          <p>建设中，敬请期待</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">⛓️</div>
+          <h3>Web3 Security</h3>
+          <p>建设中，敬请期待</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">🔬</div>
+          <h3>Security Research</h3>
+          <p>建设中，敬请期待</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{- /* Latest Cases Section */ -}}
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Latest Case Studies</h2>
+
+      {{- $cases := where .Site.RegularPages "Section" "0x00_Cases" | first 6 -}}
+      {{- if $cases -}}
+        <div class="card-grid">
+          {{- range $cases -}}
+            <div class="article-card">
+              <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{- with .Description -}}
+                <p>{{ . }}</p>
+              {{- end -}}
+              {{- with .Params.tags -}}
+                <div class="tags">
+                  {{- range first 3 . -}}
+                    <span class="tag">{{ . }}</span>
+                  {{- end -}}
+                </div>
+              {{- end -}}
+            </div>
+          {{- end -}}
+        </div>
+      {{- else -}}
+        <div class="placeholder">
+          建设中，敬请期待
+        </div>
+      {{- end -}}
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/0x00_cases/" class="btn-cta" style="background: transparent; border: 1px solid var(--highlight); color: var(--highlight) !important;">View All Cases</a>
+      </div>
+    </div>
+  </section>
+
+  {{- /* Recent Articles Section */ -}}
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Recent Articles</h2>
+
+      {{- $articles := where .Site.RegularPages "Section" "in" (slice "0x01_Blogs" "0x03_TechShare") | first 4 -}}
+      {{- if $articles -}}
+        <div class="card-grid">
+          {{- range $articles -}}
+            <div class="article-card">
+              <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              {{- with .Description -}}
+                <p>{{ . }}</p>
+              {{- end -}}
+              {{- with .Params.tags -}}
+                <div class="tags">
+                  {{- range first 3 . -}}
+                    <span class="tag">{{ . }}</span>
+                  {{- end -}}
+                </div>
+              {{- end -}}
+            </div>
+          {{- end -}}
+        </div>
+      {{- else -}}
+        <div class="placeholder">
+          建设中，敬请期待
+        </div>
+      {{- end -}}
+    </div>
+  </section>
+
+  {{- /* About Section */ -}}
+  <section class="section" style="background: var(--card-bg);">
+    <div class="container">
+      <h2 class="section-title">About Kyrin Labs</h2>
+
+      <div class="about-content">
+        <p>
+          Kyrin Labs 正在建设中，内容敬请期待...
+          <br><br>
+          专注于安全研究、数据泄露调查、内部威胁分析等领域。
+          我们致力于探索攻防技术的边界，分享真实案例与研究成果。
+        </p>
+
+        <div style="margin-top: 2rem;">
+          <a href="/0xff_about/" class="btn-cta">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{- end -}}

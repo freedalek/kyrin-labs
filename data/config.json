@@ -1,0 +1,27 @@
+{
+  "services": [
+    {
+      "title": "DLP Investigation",
+      "icon": "shield",
+      "description": "数据泄露调查与溯源分析",
+      "status": "coming_soon"
+    },
+    {
+      "title": "Web3 Security",
+      "icon": "blockchain",
+      "description": "区块链安全与智能合约审计",
+      "status": "coming_soon"
+    },
+    {
+      "title": "Security Research",
+      "icon": "research",
+      "description": "前沿安全技术研究与漏洞分析",
+      "status": "coming_soon"
+    }
+  ],
+  "tags": {
+    "level1": ["DLP", "Security", "Web3", "Malware", "Forensics"],
+    "level2": ["Case", "Research", "Blog", "Methodology", "Tool"],
+    "level3": ["SIEM", "Splunk", "Elastic", "Wireshark", "Python"]
+  }
+}
