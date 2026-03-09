@@ -1,5 +1,5 @@
 baseURL = "https://www.kyrin.one/"
-languageCode = "en"
+languageCode = "en-us"
 title = "Kyrin Labs"
 theme = ["loveit"]
 buildDrafts = false
