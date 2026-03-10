@@ -61,3 +61,4 @@ node_modules/
 *.log
 
 /resources/_gen
+README_STRUCTURE.md
