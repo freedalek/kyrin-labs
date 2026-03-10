@@ -1,0 +1,81 @@
+{{- define "content" -}}
+    <article class="page">
+        {{- /* Title */ -}}
+        <h1 class="single-title">{{ .Title }}</h1>
+
+        {{- /* Meta */ -}}
+        <div class="post-meta">
+            <div class="post-meta-line">
+                {{- $author := .Params.author | default .Site.Author.name -}}
+                {{- with $author -}}
+                    <span class="post-author">
+                        {{- printf "by %s" . -}}
+                    </span>
+                {{- end -}}
+
+                {{- $categories := slice -}}
+                {{- with .Params.categories -}}
+                    {{- $categories = . -}}
+                {{- end -}}
+                {{- with $categories -}}
+                    <span class="post-category">
+                        {{- T "in" -}}
+                        {{- range $index, $value := . -}}
+                            {{- if gt $index 0 }}, {{ end -}}
+                            <a href="{{ "categories" | relLangURL }}/{{ $value | urlize }}/">
+                                {{- $value -}}
+                            </a>
+                        {{- end -}}
+                    </span>
+                {{- end -}}
+            </div>
+            <div class="post-meta-line">
+                {{- with .Date -}}
+                    <span class="post-time">
+                        {{- .Format "2006-01-02" -}}
+                    </span>
+                {{- end -}}
+
+                {{- $comment := .Scratch.Get "comment" | default dict -}}
+                {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
+                    <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+                        <span class="post-meta-item-text"> | </span>
+                        <span class="leancloud-visitors-count"></span>
+                        {{- T "views" -}}
+                    </span>
+                {{- end -}}
+            </div>
+        </div>
+
+        {{- /* Featured image */ -}}
+        {{- with .Params.featuredImage -}}
+            <div class="featured-image">
+                {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
+            </div>
+        {{- end -}}
+
+        {{- /* Table of contents */ -}}
+        {{- if .Site.Params.page.toc | default .Site.Params.toc -}}
+            <div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>{{ T "contents" }}</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static">
+                    {{- .TableOfContents -}}
+                </div>
+            </div>
+        {{- end -}}
+
+        {{- /* Content */ -}}
+        <div class="content" id="content">
+            {{ .Content }}
+        </div>
+
+        {{- /* Footer */ -}}
+        {{- partial "single/footer.html" . -}}
+
+        {{- /* Comment */ -}}
+        {{- partial "comment.html" . -}}
+    </article>
+{{- end -}}

@@ -28,14 +28,9 @@ go.work.sum
 .env
 .env.*
 secrets.toml
-# Editor/IDE
-# .idea/
-# .vscode/
-
 # Hugo generated files
 /public
-/resources
-/resources/_gen/
+/resources/_gen
 .hugo_build.lock
 hugo_stats.json
 
@@ -53,6 +48,15 @@ Thumbs.db
 .idea/
 .vscode/
 
-# templates
-templates/
-scripts/
+# Node modules
+node_modules/
+
+# Hugo modules cache
+.hugo/
+
+# Build cache
+.cache/
+
+# Log files
+*.log
+

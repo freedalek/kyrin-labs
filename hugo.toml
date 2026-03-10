@@ -23,8 +23,8 @@ enableGitInfo = true
     name = "Dalek"
     email = ""
 
-  # Theme features
-  enableSearch = true
+  # Theme features - DISABLE SEARCH as per requirements
+  enableSearch = false
   enableToc = true
   enableWordCount = true
   enableReadingPosition = true
@@ -34,12 +34,12 @@ enableGitInfo = true
     body = "Inter"
     code = "JetBrains Mono"
 
-  # Custom colors
+  # Custom colors - Update to hacker style
   [params.custom]
-    background = "#0B0F1C"
-    text = "#C0C0C0"
-    highlight = "#3AA5FF"
-    accent = "#00FFAA"
+    background = "#0b0f14"
+    text = "#e6edf3"
+    highlight = "#00ff9c"
+    accent = "#00ff9c"
     card_bg = "#131826"
     border = "#2A3242"
 
@@ -58,37 +58,24 @@ enableGitInfo = true
   weight = 0
 
 [[menu.main]]
-  identifier = "cases"
-  name = "Case Studies"
-  url = "/0x00_cases/"
+  identifier = "techshare"
+  name = "TechShare"
+  url = "/techshare/"
   weight = 1
 
 [[menu.main]]
-  identifier = "blogs"
-  name = "Blogs"
-  url = "/0x01_blogs/"
+  identifier = "case"
+  name = "Case Studies"
+  url = "/case/"
   weight = 2
 
 [[menu.main]]
-  identifier = "techshare"
-  name = "TechShare"
-  url = "/0x03_techshare/"
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
   weight = 3
-
-[[menu.main]]
-  identifier = "methodology"
-  name = "Methodology"
-  url = "/0x02_methodology/"
-  weight = 4
-
-[[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/0xff_about/"
-  weight = 5
 
 [taxonomies]
   tag = "tags"
   category = "categories"
   series = "series"
-
