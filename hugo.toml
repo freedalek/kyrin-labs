@@ -64,36 +64,31 @@ enableGitInfo = true
   weight = 1
 
 [[menu.main]]
-  identifier = "methodology"
-  name = "Methodology"
-  url = "/0x02_methodology/"
+  identifier = "blogs"
+  name = "Blogs"
+  url = "/0x01_blogs/"
   weight = 2
-
-[[menu.main]]
-  identifier = "research"
-  name = "Research"
-  url = "/0x01_blogs/"
-  weight = 3
-
-[[menu.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/0x01_blogs/"
-  weight = 4
 
 [[menu.main]]
   identifier = "techshare"
   name = "TechShare"
   url = "/0x03_techshare/"
-  weight = 5
+  weight = 3
+
+[[menu.main]]
+  identifier = "methodology"
+  name = "Methodology"
+  url = "/0x02_methodology/"
+  weight = 4
 
 [[menu.main]]
   identifier = "about"
   name = "About"
   url = "/0xff_about/"
-  weight = 6
+  weight = 5
 
 [taxonomies]
   tag = "tags"
   category = "categories"
   series = "series"
+
