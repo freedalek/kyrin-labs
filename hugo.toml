@@ -6,6 +6,11 @@ buildDrafts = false
 buildExpired = false
 buildFuture = false
 
+[params.author]
+name = "Kyrin"
+email = ""
+link = "https://www.kyrin.one"
+
 defaultContentLanguage = "en"
 hasCJKLanguage = true
 enableEmoji = true
