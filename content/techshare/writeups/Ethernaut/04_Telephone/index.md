@@ -1,3 +1,12 @@
+---
+title: "Ethernaut - 04 Telephone"
+date: 2025-11-08
+description: "Ethernaut challenge 04: Telephone contract ownership transfer vulnerability"
+categories: ["Ethernaut", "Smart Contract Security"]
+tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
+draft: false
+---
+
 
 **核心漏洞**：`tx.origin` 与 `msg.sender` 的区别
 

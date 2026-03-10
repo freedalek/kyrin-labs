@@ -1,3 +1,12 @@
+---
+title: "Ethernaut - 05 Token"
+date: 2025-11-08
+description: "Ethernaut challenge 05: Token contract integer overflow vulnerability"
+categories: ["Ethernaut", "Smart Contract Security"]
+tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
+draft: false
+---
+
 
 **踩坑记录**：版本管理的重要性。
 

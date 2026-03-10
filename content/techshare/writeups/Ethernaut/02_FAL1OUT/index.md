@@ -1,3 +1,12 @@
+---
+title: "Ethernaut - 02 FAL1OUT"
+date: 2025-11-08
+description: "Ethernaut challenge 02: FAL1OUT contract analysis and exploitation"
+categories: ["Ethernaut", "Smart Contract Security"]
+tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
+draft: false
+---
+
 
 ## 1. 信息：
 

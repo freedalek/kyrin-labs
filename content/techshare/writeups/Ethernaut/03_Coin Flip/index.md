@@ -1,3 +1,12 @@
+---
+title: "Ethernaut - 03 Coin Flip"
+date: 2025-11-08
+description: "Ethernaut challenge 03: Coin Flip randomness vulnerability analysis"
+categories: ["Ethernaut", "Smart Contract Security"]
+tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
+draft: false
+---
+
 **踩坑记录**：区块链上的随机数很难。最初以为用 `block.number` 就够了，结果看了 Writeup 才知道这是确定性环境。
 
 **核心漏洞**：`blockhash()` 可被预测

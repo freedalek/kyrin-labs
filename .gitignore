@@ -60,3 +60,4 @@ node_modules/
 # Log files
 *.log
 
+/resources/_gen

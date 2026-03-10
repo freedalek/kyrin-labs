@@ -1,5 +1,23 @@
+---
+title: "Ethernaut - 00 Hello Ethernaut"
+date: 2025-11-08
+description: "Ethernaut challenge 00: Hello Ethernaut solution and detailed walkthrough"
+categories: ["Ethernaut", "Smart Contract Security"]
+tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
+draft: false
+---
 
 
+
+
+---
+title: "Ethernaut - 00 Hello Ethernaut"
+date: 2025-11-08
+description: "Ethernaut challenge 00: Hello Ethernaut solution and detailed walkthrough"
+categories: ["Ethernaut", "Smart Contract Security"]
+tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security", "Beginner"]
+draft: false
+---
 
 解题的时候 没有记录。。。。。。。。。
 ### 简单写一下流程：
@@ -26,7 +44,7 @@
 
 > [!NOTE]
 > 1、给钱包里放超过0.001ETH后，这个网站可以领到币（https://faucet.quicknode.com/ethereum/sepolia）。
-> 
+>
 > 2、听说B站有博主，关注之后会定期放水，有空可以了解一下。
 
 ![[Pasted image 20251108114327.png]]
@@ -89,7 +107,7 @@ await contract.authenticate('ethernaut0')
 ```<solidity>
 uint8 public infoNum = 42;     //这段代码表示42被编译成“32 字节大端”状态存储
 ```
-##### 解释一下 `.then(v => v.toString())` : 
+##### 解释一下 `.then(v => v.toString())` :
 `v`  是得到的 `BigNumber` 实例，`.then(v => v.toString())` 的意思是把 `v` 传递给 `.toString()` 函数(回调调用)。
 
 
@@ -145,9 +163,9 @@ contract Instance {
 }
 ```
 
-> 学习记录而已   #knowledge-management 
+> 学习记录而已   #knowledge-management
 
 > [!NOTE]
 > >  山高水长，路在脚下。
-> >  
+> >
 > > 心向远方者，魂无所牵，昂首即达。
