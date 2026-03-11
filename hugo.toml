@@ -13,6 +13,14 @@ defaultContentLanguage = "en"
 hasCJKLanguage = true
 enableEmoji = true
 
+# Security settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false  # Disable unsafe HTML rendering for security
+  [markup.highlight]
+    noClasses = false  # Required for syntax highlighting
+
 [pagination]
   pagerSize = 10
 
@@ -20,7 +28,10 @@ enableRobotsTXT = true
 enableGitInfo = true
 
 [params]
-  description = "Kyrin Labs - Independent Security Research & Technical Analysis"
+  description = "Security Research & DLP Investigation"
+
+  # Custom CSS for background image and other customizations
+  customCSS = ["css/custom.css"]
 
   [params.author]
     name = "Dalek"
@@ -56,6 +67,12 @@ enableGitInfo = true
 
 [params.home]
   rss = 10
+
+  # Home profile configuration
+  [params.home.profile]
+    enable = true
+    title = "Kyrin Labs"
+    subtitle = "Security Research | DLP Investigation | Web3 Security"
 
 [params.social]
   GitHub = "https://github.com/freedalek"

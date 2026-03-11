@@ -3,19 +3,9 @@ title: "Ethernaut - 01 Fallback"
 date: 2025-11-08
 description: "Ethernaut challenge 01: Fallback function vulnerability analysis and exploitation"
 categories: ["Ethernaut", "Smart Contract Security"]
-tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
-draft: false
----
-
-
-
----
-title: "Ethernaut - 01 Fallback"
-date: 2025-11-08
-description: "Ethernaut challenge 01: Fallback function vulnerability analysis and exploitation"
-categories: ["Ethernaut", "Smart Contract Security"]
 tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security", "Fallback Function"]
 draft: false
+weight: 1
 ---
 
 ## 1. 信息：

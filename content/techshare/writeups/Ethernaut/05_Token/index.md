@@ -5,6 +5,7 @@ description: "Ethernaut challenge 05: Token contract integer overflow vulnerabil
 categories: ["Ethernaut", "Smart Contract Security"]
 tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
 draft: false
+weight: 5
 ---
 
 
@@ -17,11 +18,11 @@ draft: false
 contract Token {
     mapping(address => uint) balances;
     uint256 public totalSupply;
-    
+
     constructor(uint256 _initialSupply) public {
         balances[msg.sender] = totalSupply = _initialSupply;
     }
-    
+
     function transfer(address _to, uint256 _value) public returns (bool) {
         // 这里使用了 unchecked！
         unchecked {

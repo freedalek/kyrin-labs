@@ -3,20 +3,9 @@ title: "Ethernaut - 00 Hello Ethernaut"
 date: 2025-11-08
 description: "Ethernaut challenge 00: Hello Ethernaut solution and detailed walkthrough"
 categories: ["Ethernaut", "Smart Contract Security"]
-tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
-draft: false
----
-
-
-
-
----
-title: "Ethernaut - 00 Hello Ethernaut"
-date: 2025-11-08
-description: "Ethernaut challenge 00: Hello Ethernaut solution and detailed walkthrough"
-categories: ["Ethernaut", "Smart Contract Security"]
 tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security", "Beginner"]
 draft: false
+weight: 0
 ---
 
 解题的时候 没有记录。。。。。。。。。

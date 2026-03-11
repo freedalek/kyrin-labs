@@ -1,0 +1,105 @@
+/* Kyrin Labs Custom Background and Styles */
+
+/* Homepage background image */
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Ensure content readability over background */
+.home-profile,
+.post-card,
+.article-card,
+.single .content,
+#header-desktop,
+#header-mobile,
+.footer {
+  background-color: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Improve contrast for better readability */
+.home-profile .home-title,
+.home-profile .home-subtitle,
+.post-title a,
+.article-title a,
+.single .content h1,
+.single .content h2,
+.single .content h3,
+.single .content p,
+.single .content li {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Professional security research styling */
+.home-profile {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.home-profile .home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--highlight);
+  margin-bottom: 1rem;
+}
+
+.home-profile .home-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Security-themed code blocks */
+pre {
+  border-left: 4px solid var(--danger);
+  background-color: rgba(248, 81, 73, 0.05) !important;
+}
+
+/* Security alert styling */
+.alert {
+  border-left-width: 6px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.alert-danger {
+  border-color: var(--danger);
+  background-color: rgba(248, 81, 73, 0.1);
+}
+
+.alert-warning {
+  border-color: var(--warning);
+  background-color: rgba(210, 153, 34, 0.1);
+}
+
+.alert-info {
+  border-color: var(--info);
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+  
+  .home-profile {
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+  
+  .home-profile .home-title {
+    font-size: 2.25rem;
+  }
+  
+  .home-profile .home-subtitle {
+    font-size: 1.125rem;
+  }
+}
