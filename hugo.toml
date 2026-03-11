@@ -6,10 +6,13 @@ buildDrafts = false
 buildExpired = false
 buildFuture = false
 
+[author]
+  name = "Kyrin"
+
 [params.author]
-name = "Kyrin"
-email = ""
-link = "https://www.kyrin.one"
+  name = "Kyrin"
+  email = ""
+  link = "https://www.kyrin.one"
 
 defaultContentLanguage = "en"
 hasCJKLanguage = true
